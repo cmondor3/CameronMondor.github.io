@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<font>
+ 
+
+  <head>
+  <link href="styles.css" rel="stylesheet">
+    <title>Cameron Mondor</title>
+  </head>
+  <body>
+
+<ul>
+  <li><a href="index.html">Homepage</a></li>
+  <li><a href="college.html">College</a></li>
+  <li><a href="hobbies.html">Club Track</a></li>
+</ul>
+<style> 
+#div1 {
+    background-color: black;
+    color: white;
+    width: 20000px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+	
+}
+
+</style>
+
+
+
+
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag2(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop2(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+	
+}
+</script>
+
+
+<style>
+div.facts {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="facts">
+<h2>Birth-2 years old</h2>
+<p>I was born on August 3rd, 1997 in Kingsland Georgia.</p>
+</div> 
+
+<div class="facts">
+<h2>2-10</h2>
+<p>Paris is the capital and most populous city of France.</p>
+<p>Situated on the Seine River, it is at the heart of the Île-de-France region, also known as the région parisienne.</p>
+<p>Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants.</p>
+</div>
+
+<div class="facts">
+<h2>10+</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+<p>It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.</p>
+<p>I'm currently a student at the University of Maine.</p>
+
+
+
+
+<br>
+<A HREF="https://umaine.edu/"><img src="img_logo.gif" width="200" height="69"></A>
+</div>
+</body>
+</html>
